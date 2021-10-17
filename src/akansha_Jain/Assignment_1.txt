@@ -1,0 +1,28 @@
+Create Engineering Form (title)
+
+Details(input)type=text
+1. First Name
+2. Last Name
+3. City Name
+
+
+Marks in Subjects (input) type=text
+Phys
+Math
+Chem
+
+Chose Engineering Stream any 3 (checkbox) type=checkbox
+Electrical
+Computer
+IT
+Mechnical
+Civil
+
+
+Gender (radio) type=radio
+Male
+Female
+
+Payment(drop-down)
+cash
+check
