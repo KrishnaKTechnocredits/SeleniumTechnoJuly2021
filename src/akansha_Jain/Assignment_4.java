@@ -12,8 +12,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
 public class Assignment_4 {
-
-	public static void main(String[] args) throws InterruptedException {
+	
+	void yahooSignup() throws InterruptedException {
 		System.out.println("STEP- Open chrome browser");
 		System.setProperty("webdriver.chrome.driver", "//Users//punchh_akansha//eclipse-workspace//Java_Techno_Selenium_2021//resources//chromedriver");
 		WebDriver driver=new ChromeDriver();
@@ -55,5 +55,9 @@ public class Assignment_4 {
 		
 		driver.close();
 		driver.quit();
+	}
+
+	public static void main(String[] args) throws InterruptedException {
+		new Assignment_4().yahooSignup();
 	}
 }
