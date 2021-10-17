@@ -1,5 +1,7 @@
 package technocredits;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -38,6 +40,16 @@ public class FacebookSignUpTest {
 		WebElement birthDayelement = driver.findElement(By.xpath("//select[@title='Day']"));
 		Select birthDaySelect = new Select(birthDayelement);
 		birthDaySelect.selectByVisibleText("13");
+		
+		
+		Select monthSelect = new Select(driver.findElement(By.xpath("//select[@id='month']")));
+		List<WebElement> listOfMonthSelectOptions = monthSelect.getOptions();
+		System.out.println(listOfMonthSelectOptions.size());
+		
+		for(WebElement element : listOfMonthSelectOptions) {
+			if(element.isSelected())
+				System.out.println(element.getText());
+		}
 		
 		driver.close();
 		System.out.println("Test passed successfully");
