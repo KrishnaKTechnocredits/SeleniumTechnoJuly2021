@@ -25,7 +25,8 @@ public class Program2 {
 
 		System.out.println("STEP - Click on registration link");
 		driver.findElement(By.xpath("//a[@id='basicelements']")).click();
-
+		Thread.sleep(3000L);
+		
 		System.out.println("STEP - Click on Alerts button");
 		driver.findElement(By.id("javascriptAlert")).click();
 
