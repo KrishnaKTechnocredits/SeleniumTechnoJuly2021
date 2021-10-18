@@ -22,7 +22,7 @@ public class Assignment_2 {
 		System.out.println("STEP-Click on Sign in");
 		driver.findElement(By.xpath("//a[@class='login']")).click();
 		System.out.println("STEP- Enter Email Address");
-		driver.findElement(By.name("email_create")).sendKeys("kicprhmno@gmail.com");
+		driver.findElement(By.name("email_create")).sendKeys("mnoca@gmail.com");
 		
 		System.out.println("STEP- Click on Create Account Button");
 		driver.findElement(By.id("SubmitCreate")).click();
@@ -33,10 +33,10 @@ public class Assignment_2 {
 		title.click();
 		
 		System.out.println("STEP-Enter First Name");
-		driver.findElement(By.xpath("//input[@name='customer_firstname']")).sendKeys("EVA");
+		driver.findElement(By.xpath("//input[@name='customer_firstname']")).sendKeys("Eva");
 		
 		System.out.println("STEP-Enter Last Name");
-		driver.findElement(By.id("customer_lastname")).sendKeys("pqr");
+		driver.findElement(By.id("customer_lastname")).sendKeys("Patil");
 	
 		System.out.println("STEP-Email");
 		driver.findElement(By.name("email"));
@@ -103,8 +103,7 @@ public class Assignment_2 {
 		driver.findElement(By.xpath("//button[@id='submitAccount']")).click();
 		System.out.println("STEP- Close the Browser");
 		driver.close();
-		driver.manage().window().maximize();
-		
+		System.out.println("Test Passed Successfully");
 	}
 	public static void main(String[] args) throws InterruptedException {
 		signup();
