@@ -4,7 +4,7 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="lib" path="libs/byte-buddy-1.8.15.jar"/>
 	<classpathentry kind="lib" path="libs/client-combined-3.141.59-sources.jar"/>
-	<classpathentry kind="lib" path="libs/client-combined-3.141.59.jar" sourcepath="D:/TechnoCredits/Projects/JUL21/eclipse/SeleniumTechnoJuly2021/libs/client-combined-3.141.59-sources.jar"/>
+	<classpathentry kind="lib" path="libs/client-combined-3.141.59.jar"/>
 	<classpathentry kind="lib" path="libs/commons-exec-1.3.jar"/>
 	<classpathentry kind="lib" path="libs/guava-25.0-jre.jar"/>
 	<classpathentry kind="lib" path="libs/okhttp-3.11.0.jar"/>
