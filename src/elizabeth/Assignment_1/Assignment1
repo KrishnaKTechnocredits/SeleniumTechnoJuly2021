@@ -1,0 +1,86 @@
+<html>
+	
+	<head>
+		<title>Engineering Form</title>
+	</head>
+
+	<body>
+			<label name="details" id="details">Personal Details</label>
+		<br>
+		<br>
+			<label id="first_name_label">First name</label>
+			<input type="text" id="first_name"></input>
+		<br>
+		<br>
+			<label id="last_name_label">Last name</label>
+			<input type="text" id="last_name"></input>
+		<br>
+		<br>
+			<label id="city_name_label">City name</label>
+			<input type="text" id="city_name"></input>
+		<br>
+		<br>
+		
+		<label name="marks" id="marks">Marks Obtained</label>
+		<br>
+		<br>
+			<label id="phy">Physics</label>
+			<input type="text" id="phy"></input>
+		<br>
+		<br>
+			<label id="math">Mathematics</label>
+			<input type="text" id="math"></input>
+		<br>
+		<br>
+			<label id="phy">Physics</label>
+			<input type="text" id="phy"></input>
+		<br>
+		<br>
+			<label id="anything">Choose Engineering Stream any 3 options</label>
+		<br>
+		<br>
+			<input type="checkbox" id="electrical">Electrical</input>
+		<br>
+			<input type="checkbox" id="computer">Computer</input>
+		<br>
+			<input type="checkbox" id="it">IT</input>
+		<br>
+			<input type="checkbox" id="mechanical">Mechnical</input>
+		<br>
+			<input type="checkbox" id="civil">Civil</input>
+		<br>
+		<br>
+			<label>Please select the gender</label>
+		<br>
+			<input name="gender" type="radio">Male</input>
+		<br>
+			<input name="gender" type="radio">Female</input>
+		<br>
+		
+		<br>
+			<label id="payment">Payment</label>
+		<br>
+		<br>
+			<select name="Payment method" id="drop-down">
+				<option value="cash">Select the payment method</option>
+		    	<option value="cash">Cash</option>
+		    	<option value="cheque">Cheque</option>
+			</select>
+		<br>
+		<br>
+	</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
