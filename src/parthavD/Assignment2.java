@@ -11,13 +11,13 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
+import base.PredefinedActions;
+
 public class Assignment2 {
 
 	void automateSignUp() throws InterruptedException {
-		System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
-		WebDriver driver = new ChromeDriver();
 		System.out.println("Step 1 - Launch Automation Practice URL ");
-		driver.get("http://automationpractice.com/index.php");
+		WebDriver driver = PredefinedActions.start("http://automationpractice.com/index.php");
 		Thread.sleep(1000);
 		System.out.println("Step 2 - Click on Sign In button ");
 		driver.findElement(By.xpath("//a[@title='Log in to your customer account']")).click();
@@ -26,7 +26,7 @@ public class Assignment2 {
 		driver.findElement(By.xpath("//input[@name='email_create']")).sendKeys(userEmail);
 		System.out.println("Step 4 - Click Create Account Button");
 		driver.findElement(By.xpath("//div[@class='submit']/button[@id='SubmitCreate']")).click();
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		System.out.println("Step 5 - Select Salutation");
 		driver.findElement(By.xpath("//input[@id='id_gender1']")).click();
 		System.out.println("Step 6 - Enter First Name");
