@@ -48,6 +48,7 @@ public class Assignment6 {
 			}
 			System.out.println("STEP- Navigate to main window");
 			driver.switchTo().window(mainWindow);
+			System.out.println("Test pass - Assignment 6");
 		}
 		
 			driver.close();	
