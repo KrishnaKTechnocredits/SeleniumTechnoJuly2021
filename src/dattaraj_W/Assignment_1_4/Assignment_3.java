@@ -19,7 +19,7 @@ public class Assignment_3 {
 			System.out.println(moble_num + " is valid number");
 		}
 		
-		String email = driver.findElement(By.xpath("//div[@class='icon_mail']")).getText();
+		String email = driver.findElement(By.xpath(".//div[@id='contact_info-widget-3']/div[@class='icon_loc']")).getText();
 		if(email.equals("contact@globalsqa.com")) {
 			System.out.println(email + " is valid email");
 		}else {
