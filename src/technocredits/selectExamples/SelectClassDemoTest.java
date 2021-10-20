@@ -1,4 +1,4 @@
-package technocredits;
+package technocredits.selectExamples;
 
 import java.util.ArrayList;
 import java.util.List;
