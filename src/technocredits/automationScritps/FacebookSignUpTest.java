@@ -1,4 +1,4 @@
-package technocredits;
+package technocredits.automationScritps;
 
 import java.util.List;
 
