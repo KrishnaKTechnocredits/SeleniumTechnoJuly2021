@@ -1,0 +1,75 @@
+<html>
+	<head>
+		<title name="title">Engineering Form</title>
+		<style>
+		.section{
+			background-color: lemonchiffon;
+			color: sienna;
+			border: 2px solid black;
+			margin: 20px;
+			padding: 20px;
+		}
+		
+		body{background-color: darkseagreen;
+		}
+		
+		</style>
+	</head>
+	<body>
+	<br>
+		<div class="section">
+			<h2>Details</h2>
+			<label name="fname_label" style="font-size:18px">First Name</label>
+			<input type="text" id="first_name" align="right" ></input>
+			<br>
+			<label name="lname_label" style="font-size:18px">Last Name</label>
+			<input type="text" id="last_name" class="fonts" align="right"></input>
+			<br>
+			<label name="city_label" style="font-size:18px" align="right">City Name</label>
+			<input type="text" id="city_name"></input>
+			<br>
+			<br>
+		</div>
+		<div class="section">
+			<h2>Marks in Subjects</h2>
+			<label name="phy_label" style="font-size:18px">Physics</label>
+			<input type="text" id="phy_name"></input>
+			<br>
+			<label name="math_label" style="font-size:18px">Mathematics</label>
+			<input type="text" id="math_name"></input>
+			<br>
+			<label name="chem_label" style="font-size:18px">Chemistry</label>
+			<input type="text" id="chem_name"></input>
+			<br>
+			<br>
+			</div>
+		<div class="section">
+			<h2>Choose Engineering Stream any 3</h2>
+			<input type ="checkbox" name="electrical" style="font-size:18px">Electrical</input>
+			<br>
+			<input type ="checkbox" name="computer" style="font-size:18px">Computer</input>
+			<br>
+			<input type ="checkbox" name="IT">IT</input>
+			<br><input type ="checkbox" name="mechanical" style="font-size:18px">Mechanical</input>
+			<br>
+			<input type ="checkbox" name="civil" style="font-size:18px">Civil</input>
+			<br>
+			<br>
+		</div>
+		<div class="section">
+			<h2>Gender</h2>
+			<input type="radio" name="gender" style="font-size:18px">Male</input>
+			<br>
+			<input type="radio" name="gender" style="font-size:18px">Female</input>
+			<br>
+			<br>
+		</div>
+		<div class="section">
+			<h2>Payment</h2>
+			<select>
+				<option value="cash">Cash</option>
+				<option value="check">Check</option>
+				<option selected value="default">Please select Payment Type</option>
+			</select>
+	</body>
+</html>

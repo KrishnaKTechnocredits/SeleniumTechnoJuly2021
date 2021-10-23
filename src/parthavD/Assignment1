@@ -1,0 +1,97 @@
+<html>
+	<head>
+		<label id ="EngineeringForm">Engineering Form </label>
+	<br>
+	<br>
+		<body>
+			<label id="Details" class="Details">Details </label>
+			<br>
+			<br>
+			<label id="FNameLabel" class="FirstName">First Name </label>
+			<input id="FirstName" class="FName" type="text"></input>
+			<br>
+			<br>
+			<label id="LNameLabel" class="LastName">Last Name </label>
+			<input id="LastName" class="LName" type="text"></input>
+			<br>
+			<br>
+			<label id="CNameLabel" class="CityName">City Name </label>
+			<input id="CityName" class="CName" type="text"></input>
+			<br>
+			<br>
+			<label id="MSubject" class="MSubject">Marks in Subjects</label>
+			<br>
+			<br>
+			<label id="Phys" class="Phys">Physics </label>
+			<input id="Physics" class="Physics" type="text"></input>
+			<br>
+			<br>
+			<label id="Chem" class="Chem">Chemistry</label>
+			<input id="Chemistry" class="Chemistry" type="text"></input>
+			<br>
+			<br>
+			<label id="Math" class="Math">Maths</label>
+			<input id="Maths" class="Maths" type="text"></input>
+			<br>
+			<br>
+			<label id="CEngStream" class="CEngStream">Choose Engineering Stream</label>
+			<br>
+			<br>
+			<label id="Electr" name="CStream" class="Electr">Electrical</label>
+			<input id="Electrical" name="CStream" type="checkbox"></input>
+			<br>
+			<br>
+			<label id="Compu"  name="CStream" class="Compu">Computers</label>
+			<input id="Computers" name="CStream" type="checkbox"></input>
+			<br>
+			<br>
+			<label id="ITL" class="ITL">IT</label>
+			<input id="IT" name="CStream" type="checkbox"></input>
+			<br>
+			<br>
+			<label id="Mecha" class="Mecha">Mechanical</label>
+			<input id="Mechanical" name="CStream" type="checkbox"></input>
+			<br>
+			<br>
+			<label id="CivilC" class="CivilC">Civil</label>
+			<input id="Civil" name="CStream" type="checkbox"></input>
+			<br>
+			<br>
+			<label id="Gender" class="Gender">Select Gender</label>
+			<br>
+			<br>
+			<label id="MaleC" class="MaleC">Male</label>
+			<input id="Male" class="Male"  name="gender" type="radio"></input>
+			<br>
+			<br>
+			<label id="FemaleC" class="FemaleC">Female</label>
+			<input id="Female" class="Female"  name="gender" type="radio"></input>
+			<br>
+			<br>
+			<label id="Payment" class="PaymentC">Payment Option</label>
+			<br>
+			<br>
+			<select>
+				<option></option>
+				<option id="cash" name="cash">Cash</option>
+				<option id="check" name="check">Check</option>
+			</select>
+			<br>
+			<br>
+			<button id="submitbutton" name="submitbutton">Submit Button</button>
+			<br>
+			<button id="helpbutton"</button>
+			<a href="https://www.google.com/" target="_blank">Help Button</a>
+			
+			
+			
+		</body>
+	
+	
+	
+	
+	
+	</head>
+
+
+</html>
