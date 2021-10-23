@@ -5,7 +5,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Action {
 	
-	static WebDriver start(String  url) {
+	public static WebDriver start(String  url) {
 		System.setProperty("webdriver.chrome.driver", "./resources/chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		System.out.println("Chrome Browser opened");
@@ -15,7 +15,7 @@ public class Action {
 		return driver;
 	}
 	
-	static WebDriver start() {
+	public static WebDriver start() {
 		System.setProperty("webdriver.chrome.driver", "./resources/chromedriver.exe");
 		System.out.println("Open Chrome Browser");
 		WebDriver driver = new ChromeDriver();
