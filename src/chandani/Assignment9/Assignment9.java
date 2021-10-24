@@ -116,9 +116,5 @@ public class Assignment9 {
 		System.out.println("STEP - Assignment 9 Passed Successfully");		
 	}
 	
-	@AfterSuite
-	void close() {
-		driver.close();
-	}
 	
 }
