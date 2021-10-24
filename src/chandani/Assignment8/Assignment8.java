@@ -11,10 +11,12 @@ import java.util.Map;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
 
 public class Assignment8 {
 	
-	Map<String, Integer> getEmployeeCountOfDepartment() throws InterruptedException{
+	@Test
+	public void getEmployeeCountOfDepartment() throws InterruptedException{
 		
 		Map<String,Integer> map = new LinkedHashMap<String,Integer>();
 		System.setProperty("webdriver.chrome.driver", "./resources/chromedriver.exe");
@@ -41,11 +43,11 @@ public class Assignment8 {
 		System.out.println("------------------------------------------");
 		System.out.println(map);
 		driver.close();
-		return map;
 	}
 	
-	public static void main(String[] args) throws InterruptedException {
+	//Map<String, Integer>
+	/*public static void main(String[] args) throws InterruptedException {
 		Assignment8 assignment8 = new Assignment8();
 		assignment8.getEmployeeCountOfDepartment();
-	}
+	}*/
 }
