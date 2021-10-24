@@ -14,24 +14,24 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
 public class Assignment8 {
-	
+
 	@Test
 	public void getEmployeeCountOfDepartment() throws InterruptedException{
-		
+
 		Map<String,Integer> map = new LinkedHashMap<String,Integer>();
 		System.setProperty("webdriver.chrome.driver", "./resources/chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.navigate().to("http://automationbykrishna.com/#");
-		
+
 		Thread.sleep(3000);
 		driver.manage().window().maximize();
 		System.out.println("STEP - Click on Demo Tables Link");
 		driver.findElement(By.linkText("Demo Tables")).click();
-		
+
 		Thread.sleep(3000);
 		System.out.println("STEP - Find number of rows");
 		int TotalRows = driver.findElements(By.xpath("//table[@class=\"table table-striped\"]/tbody/tr")).size();
-		
+
 		System.out.println("STEP - Count of Employees per Department");
 		for (int rowIndex = 1; rowIndex <= TotalRows; rowIndex++) {
 			String dptName = driver.findElement(By.xpath("//table[@class='table table-striped']/tbody/tr[" + rowIndex + "]/td[5]")).getText();
@@ -44,7 +44,7 @@ public class Assignment8 {
 		System.out.println(map);
 		driver.close();
 	}
-	
+
 	//Map<String, Integer>
 	/*public static void main(String[] args) throws InterruptedException {
 		Assignment8 assignment8 = new Assignment8();
