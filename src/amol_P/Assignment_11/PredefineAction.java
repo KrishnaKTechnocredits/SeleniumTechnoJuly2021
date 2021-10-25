@@ -1,0 +1,22 @@
+package amol_P.Assignment_11;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class PredefineAction {
+
+	public static  WebDriver start() {
+		System.setProperty("webdriver.chrome.driver","./resources//chromedriver.exe");
+		WebDriver driver =new ChromeDriver();
+		System.out.println("Step 1: Open Browser");
+		driver.get("http://automationbykrishna.com/index.html#");
+		driver.manage().window().maximize();
+		
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		System.out.println("Step 2: Click on demo link");
+		return driver;
+
+}
+}
