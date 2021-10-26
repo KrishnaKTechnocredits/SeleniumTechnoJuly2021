@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite">
+
+	<test name="Test">
+		<groups>
+			<dependencies>
+				<group depends-on="regression" name="smoke"></group>
+			</dependencies>
+		</groups>
+		<classes>
+			<class name="technocredits.testngExamples.AmazonGroups" />
+		</classes>
+	</test>
+</suite>
