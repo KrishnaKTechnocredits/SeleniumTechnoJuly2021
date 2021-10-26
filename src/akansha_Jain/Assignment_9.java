@@ -21,15 +21,15 @@ public class Assignment_9 {
 	WebDriver driver;
 	
 	@BeforeClass
-	void launchBrowser() throws InterruptedException {
+	void launchBrowser() {
 		System.out.println("STEP- Open chrome browser");
 		System.setProperty("webdriver.chrome.driver", "//Users//punchh_akansha//eclipse-workspace//Java_Techno_Selenium_2021//resources//chromedriver");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		System.out.println("STEP- Open URL");
 		driver.get("http://automationbykrishna.com/index.html#");
-		driver.findElement(By.linkText("Demo Tables")).click();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.findElement(By.linkText("Demo Tables")).click();
 	}
 	
 	HashMap<String, ArrayList<String>> getDeptEmpMap() {
