@@ -39,6 +39,7 @@ public class Assignment8 {
 	
 	@Test
 	void testCase1() {
+		System.out.println("Step 1: Return a map of Deptname and count of employee within each deptment");
 		Map<String,Integer> actualMap=new LinkedHashMap<>();
 		int totalRows=driver.findElements(By.xpath("//table[@class='table table-striped']/tbody/tr")).size();
 		for(int index=1;index<=totalRows;index++) {
