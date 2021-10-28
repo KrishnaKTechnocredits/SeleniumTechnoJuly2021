@@ -55,11 +55,11 @@ public class TestCase1 {
 		Thread.sleep(3000);
 		System.out.println("Step 3: Enter the username");
 		driver.findElement(By.id("unameSignin")).sendKeys("vivek@xyz.com");
-		System.out.println("Step 4: Enter the password more than 8 characters");
+		System.out.println("Step 4: Enter the password less than 8 characters");
 		driver.findElement(By.id("pwdSignin")).sendKeys("vivek");
 		System.out.println("Step 5: Click on submit");
 		driver.findElement(By.id("btnsubmitdetails")).click();
-		System.out.println("Step 6: Validate the success message");
+		System.out.println("Step 6: Validate the failed message");
 		Alert alert = driver.switchTo().alert();
 		String ActualText = alert.getText();
 		String ExpectedText = "Failed! please enter strong password";
