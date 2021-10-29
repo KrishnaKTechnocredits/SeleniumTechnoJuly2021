@@ -1,4 +1,4 @@
-package testng.dependsOnGroups;
+package technocredits.testng.dependsOnGroups;
 
 import org.testng.annotations.Test;
 
