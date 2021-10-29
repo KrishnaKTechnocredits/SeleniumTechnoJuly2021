@@ -1,20 +1,21 @@
-package testng.dependsOnGroups;
+package technocredits.testng.dependsOnGroups;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class AmazonClass {
 
 	@Test
 	public void login() {
-		System.out.println("login");
+		Assert.fail();
 	}
 
-	@Test
+	@Test()
 	public void addItemsTobucket() {
 		System.out.println("Item Added");
 	}
 
-	@Test(dependsOnMethods = { "login", "addItemsTobucket" })
+	@Test(dependsOnMethods = { "addItemsTobucket" })
 	public void removeItemsFromBucket() {
 		System.out.println("Item Removed");
 	}
