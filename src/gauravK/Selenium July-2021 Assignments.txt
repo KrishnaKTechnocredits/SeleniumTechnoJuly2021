@@ -1,0 +1,68 @@
+Selenium July-2021 Assignments
+
+
+Assignment 1:
+
+Create Web page with below specifications.
+
+Engineering Form (title)
+
+Details(input)type=text
+1. First Name
+2. Last Name
+3. City Name
+
+Marks in Subjects (input) type=text
+
+Phys
+Math
+Chem
+
+Chose Engineering Stream any 3 (checkbox) type=checkbox
+
+Electrical
+Computer
+IT
+Mechnical
+Civil
+
+
+Gender (radio) type=radio
+Male
+Female
+
+Payment(drop-down)
+cash
+check
+
+------------------------------------------------------------
+......................................................
+
+System.out.println("STEP - select month");
+WebElement birthMonthElement = driver.findElement(By.xpath("//select[@name='birthday_month']");
+Select birthMonthSelect = new Select(birthMonthElement);
+birthMonthSelect.selectByVisibleText("Dec");
+
+System.out.println("STEP - select year");
+WebElement birthYearElement = driver.findElement(By.xpath("//select[@name='birthday_year']");
+Select birthYearSelect = new Select(birthYearElement);
+birthYearSelect.selectByVisibleText("2000");
+
+..................................................
+-----------------------------------------------------
+Assignment - 2 : 16th Oct'2021
+Automate Singup : 
+http://automationpractice.com/index.php
+(lets try to practice more on xpath.)
+
+------------------------------------------------------------
+Assignment - 3: 16th Oct'2021
+https://www.globalsqa.com/contact-us/
+Verify Contact details.
+Fill the form.
+-------------------------------------------------------------
+Assignment - 4: 16th Oct'2021
+Yahoo Signup.
+https://login.yahoo.com/account/create?specId=yidReg
+-------------------------------------------------------------
+
