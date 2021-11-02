@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="Test">
+  <parameter name="exptableCount" value="4"></parameter>
+  <parameter name="expRowCount" value="5"></parameter>
+  <parameter name="expColumnCount" value="4"></parameter>
+  <parameter name="exptagrgetIndex" value="3"></parameter>
+  <parameter name="expfirstName" value="Abhishek"></parameter>
+  <parameter name="expUserName" value="ppatro"></parameter>
+  <parameter name="name" value="kkanani"></parameter> 
+    <classes>
+      <class name="priti.Assingment_7.TestCase_1">
+      <methods>
+      <include name="verifyTotalTablecount"></include>
+      <include name="verifyCountOFRowsInEmployeeBasicIinformation"></include>
+      <include name="verifyTotalColCountInEmployeeBasicInformation"></include>
+      <include name="getFristNameListFromEmployeeTable"></include>
+      <include name="returnIndexOfGivenColumName"></include>
+      <include name="printallRows"></include>
+      <include name="printLastnameofEmpForGivenFirstName"></include>
+      <include name="printFirstNamewithUserNameGiven"></include>
+      <include name="findUniqueSurname"></include>
+      <include name="returnMapOFFirstNameAndUserName"></include>
+      <include name="containsGivenUsername"></include>
+      </methods>
+      
+      </class>
+         
+       </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
