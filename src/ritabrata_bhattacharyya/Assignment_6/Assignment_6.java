@@ -5,11 +5,10 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import priti.Assingment_6.Assingment_6;
 
 public class Assignment_6 {
 	
-	void handleExtraWindows() throws InterruptedException {
+	public void handleExtraWindows() throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver", "./resources/chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		System.out.println("STEP1-Open Chrome Browser");
@@ -46,7 +45,7 @@ public class Assignment_6 {
 			System.out.println("Test_6 executed and passed successfully.");
 	}
 	public static void main(String[] args) throws InterruptedException {
-		new Assingment_6().handleExtraWindows();
+		new Assignment_6().handleExtraWindows();
 	}
 }
 
