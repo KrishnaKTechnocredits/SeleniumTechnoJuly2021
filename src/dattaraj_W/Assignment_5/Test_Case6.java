@@ -24,7 +24,7 @@ WebDriver driver;
 		System.out.println("STEP- Enter email");
 		driver.findElement(By.xpath("//input[@id='exampleInputEmail1']")).sendKeys("dattarajwete@gmail.com");
 		System.out.println("STEP- Enter password");
-		driver.findElement(By.xpath("//input[@id='UserLastName']")).sendKeys("werdfsead@123");
+		driver.findElement(By.xpath("//input[@id='pwd']")).sendKeys("werdfsead@123");
 		System.out.println("STEP- Tap on submit button");
 		driver.findElement(By.xpath("//button[@id='submitb2']")).click();
 		System.out.println("STEP- Get alert message");
@@ -37,8 +37,8 @@ WebDriver driver;
 			System.out.println("Alert message not match");
 		driver.switchTo().alert().accept();
 		
-		driver.close();
-		driver.quit();
+		//driver.close();
+		//driver.quit();
 	}
 	
 	public static void main(String[] args) throws InterruptedException {

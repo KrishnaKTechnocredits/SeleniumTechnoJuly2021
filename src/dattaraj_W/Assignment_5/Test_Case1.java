@@ -61,7 +61,7 @@ public class Test_Case1 {
 		//Negative scenario
 		System.out.println();
 		System.out.println("STEP- Enter username");
-		driver.findElement(By.xpath("//input[@id='unameSignin']")).sendKeys("AkanshaJain");
+		driver.findElement(By.xpath("//input[@id='unameSignin']")).sendKeys("DattarajW");
 		
 		System.out.println("STEP- Enter less than 8 digit password");
 		driver.findElement(By.xpath("//input[@id='pwdSignin']")).sendKeys("qwerty");

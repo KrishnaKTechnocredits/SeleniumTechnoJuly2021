@@ -23,7 +23,7 @@ public class Test_Case5 {
 			Thread.sleep(3000);
 			System.out.println("STEP- Tap on basic elements");
 			driver.findElement(By.xpath("//a[@id='basicelements']")).click();
-			//Thread.sleep(3000);
+			Thread.sleep(3000);
 			System.out.println("STEP- Enter First Name");
 			String firstName = "Dattaraj";
 			driver.findElement(By.xpath("//input[@id='UserFirstName']")).sendKeys(firstName);
