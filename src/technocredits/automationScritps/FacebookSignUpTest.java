@@ -16,7 +16,7 @@ public class FacebookSignUpTest {
 		WebDriver driver = new ChromeDriver();
 		System.out.println("STEP - Enter facebook url");
 		driver.get("https://www.facebook.com");
-		
+
 		System.out.println("STEP - click on create account button");
 		driver.findElement(By.xpath("//a[@data-testid='open-registration-form-button']")).click();
 		
@@ -40,7 +40,6 @@ public class FacebookSignUpTest {
 		WebElement birthDayelement = driver.findElement(By.xpath("//select[@title='Day']"));
 		Select birthDaySelect = new Select(birthDayelement);
 		birthDaySelect.selectByVisibleText("13");
-		
 		
 		Select monthSelect = new Select(driver.findElement(By.xpath("//select[@id='month']")));
 		List<WebElement> listOfMonthSelectOptions = monthSelect.getOptions();
