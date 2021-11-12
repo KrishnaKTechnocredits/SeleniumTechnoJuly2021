@@ -18,9 +18,9 @@ public class ClickAndHoldExample {
 		
 		Actions action = new Actions(driver);
 		action
-		.clickAndHold(draggable)
-		.moveToElement(droptarget)
-		.release()
+		.clickAndHold(draggable)// single action
+		.moveToElement(droptarget)// single action
+		.release()// single action
 		.build()
 		.perform();
 		
