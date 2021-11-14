@@ -113,7 +113,7 @@ WebDriver driver;
 	
 	@BeforeClass
 	void star() throws InterruptedException {
-		System.setProperty("webdriver.chrome.driver", "./resources/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
 		System.out.println("Step- Open Browser");
 		driver = new ChromeDriver();
 		System.out.println("Step- Open URL");
@@ -129,9 +129,9 @@ WebDriver driver;
 	
 	//to get all EmployeeDetils Strore in ArrayList
 	
-	void getAllTableData() {
+	/*void getAllTableData() {
 		System.out.println("Read data from table and add that in list ");
-		ArrayList <Employee> employeeList= new ArrayList();
+		//ArrayList <Employee> employeeList= new ArrayList();
 		int rowCOunt = driver.findElements(By.xpath("//table[@id='table1']/tbody/tr")).size();
 		int cloumn=driver.findElements(By.xpath("//table[@id='table1']/thead//th")).size();
 		for (int i=1; i<=rowCOunt; i++ ) {
@@ -142,7 +142,7 @@ WebDriver driver;
 			employeeList.add(new Employee(rowdata.get(0), rowdata.get(1), rowdata.get(2), rowdata.get(3) ));
 		}
 		System.out.println(employeeList);
-	}
+	}*/
 	//1) How many tables are there on the page
 	@Test
 	void gettotalNumberTables() {
