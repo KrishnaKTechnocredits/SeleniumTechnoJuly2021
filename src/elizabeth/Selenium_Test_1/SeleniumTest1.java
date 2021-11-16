@@ -40,7 +40,6 @@ public class SeleniumTest1 {
 		Actions action=new Actions(driver);
 		WebElement signIn=driver.findElement(By.xpath("//*[text()='Sign In']"));
 		action.moveToElement(signIn).build().perform();
-		System.out.println("Step: Verify Your Account, Your Orders, Shortlist, SD Cash option is visible in the same order.");
 		List<WebElement> menu=driver.findElements(By.xpath("//div[@class='dropdownAccountNonLoggedIn']//li"));
 		ArrayList<String> al=new ArrayList<String>();
 		for(WebElement menuName:menu) {
@@ -53,6 +52,7 @@ public class SeleniumTest1 {
 	@Test
 	public void verifySignInButton(){
 		ArrayList<String> actualMenu=menuList();
+		System.out.println("Step: Verify Your Account, Your Orders, Shortlist, SD Cash option is visible in the same order.");
 		System.out.println("Actual Menu List: " +actualMenu);
 		ArrayList<String> expectedMenu=new ArrayList<String>();
 		expectedMenu.add("Your Account");
