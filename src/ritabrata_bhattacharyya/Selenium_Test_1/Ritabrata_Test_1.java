@@ -23,7 +23,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 
-public class Test_1 {
+public class Ritabrata_Test_1 {
 	WebDriver driver;
 	
 	@BeforeClass
