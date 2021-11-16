@@ -1,4 +1,4 @@
-package elizabeth.Selenium_Test_1;
+	package elizabeth.Selenium_Test_1;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -35,19 +35,24 @@ public class SeleniumTest1 {
 		driver.close();
 	}
 	
-	@Test
-	public void verifySignInButton(){
+	ArrayList<String> menuList() {
 		System.out.println("Step: Mouse Hover on Sign In button");
 		Actions action=new Actions(driver);
 		WebElement signIn=driver.findElement(By.xpath("//*[text()='Sign In']"));
 		action.moveToElement(signIn).build().perform();
 		System.out.println("Step: Verify Your Account, Your Orders, Shortlist, SD Cash option is visible in the same order.");
 		List<WebElement> menu=driver.findElements(By.xpath("//div[@class='dropdownAccountNonLoggedIn']//li"));
-		ArrayList<String> actualMenu=new ArrayList<String>();
+		ArrayList<String> al=new ArrayList<String>();
 		for(WebElement menuName:menu) {
 			String name=menuName.getText();
-			actualMenu.add(name);
+			al.add(name);
 		}
+		return al;
+	}
+	
+	@Test
+	public void verifySignInButton(){
+		ArrayList<String> actualMenu=menuList();
 		System.out.println("Actual Menu List: " +actualMenu);
 		ArrayList<String> expectedMenu=new ArrayList<String>();
 		expectedMenu.add("Your Account");
