@@ -1,4 +1,4 @@
-	package elizabeth.Selenium_Test_1;
+package elizabeth.Selenium_Test_1;
 
 import java.util.ArrayList;
 import java.util.List;
