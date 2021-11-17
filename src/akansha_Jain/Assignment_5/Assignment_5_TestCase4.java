@@ -17,23 +17,24 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Assignment_5_TestCase4 {
 	WebDriver driver;
-	
+
 	public Assignment_5_TestCase4(String url) {
-		System.setProperty("webdriver.chrome.driver", "//Users//punchh_akansha//eclipse-workspace//Java_Techno_Selenium_2021//resources//chromedriver");
+		System.setProperty("webdriver.chrome.driver",
+				"//Users//punchh_akansha//eclipse-workspace//Java_Techno_Selenium_2021//resources//chromedriver");
 		System.out.println("STEP - Open Chrome Browser");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		System.out.println("STEP - Enter url");
 		driver.get(url);
 	}
-	
-	//Test Case-4
+
+	// Test Case-4
 	void testCase4() throws InterruptedException {
 		Thread.sleep(3000);
 		System.out.println("STEP- Tap on basic elements");
 		driver.findElement(By.xpath("//a[@id='basicelements']")).click();
 		Thread.sleep(3000);
-		
+
 		// Accept alert
 		System.out.println("STEP- Tap on Javascript Prompt button");
 		driver.findElement(By.xpath("//button[@id='javascriptPromp']")).click();
@@ -45,12 +46,12 @@ public class Assignment_5_TestCase4 {
 		System.out.println("STEP- Validate confirmation message in case of okay");
 		String expectedConfirmationMessage = "Hello " + name + "! How are you today?";
 		String confirmationMessage = driver.findElement(By.xpath("//p[contains(text(), 'Hello')]")).getText();
-		if(confirmationMessage.equals(expectedConfirmationMessage))
+		if (confirmationMessage.equals(expectedConfirmationMessage))
 			System.out.println("Confirmation message match");
 		else
 			System.out.println("Confirmation message not match");
-		
-		//Dismiss alert
+
+		// Dismiss alert
 		System.out.println("STEP- Tap on Javascript Prompt button");
 		driver.findElement(By.xpath("//button[@id='javascriptPromp']")).click();
 		System.out.println("STEP- Press cancel");
@@ -58,7 +59,7 @@ public class Assignment_5_TestCase4 {
 		System.out.println("STEP- Validate confirmation message in case of cancel");
 		String expectedConfirmationMessage2 = "User cancelled the prompt.";
 		String confirmationMessage2 = driver.findElement(By.xpath("//p[contains(text(), 'User')]")).getText();
-		if(confirmationMessage2.equals(expectedConfirmationMessage2))
+		if (confirmationMessage2.equals(expectedConfirmationMessage2))
 			System.out.println("Confirmation message match");
 		else
 			System.out.println("Confirmation message not match");
@@ -68,7 +69,7 @@ public class Assignment_5_TestCase4 {
 	}
 
 	public static void main(String[] args) throws InterruptedException {
-		String url= "http://automationbykrishna.com/#";
+		String url = "http://automationbykrishna.com/#";
 		new Assignment_5_TestCase4(url).testCase4();
 	}
 }

@@ -17,17 +17,18 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Assignment_5_TestCase5 {
 	WebDriver driver;
-	
+
 	public Assignment_5_TestCase5(String url) {
-		System.setProperty("webdriver.chrome.driver", "//Users//punchh_akansha//eclipse-workspace//Java_Techno_Selenium_2021//resources//chromedriver");
+		System.setProperty("webdriver.chrome.driver",
+				"//Users//punchh_akansha//eclipse-workspace//Java_Techno_Selenium_2021//resources//chromedriver");
 		System.out.println("STEP - Open Chrome Browser");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		System.out.println("STEP - Enter url");
 		driver.get(url);
 	}
-	
-	//Test Case-5
+
+	// Test Case-5
 	void testCase5() throws InterruptedException {
 		Thread.sleep(3000);
 		System.out.println("STEP- Tap on basic elements");
@@ -48,18 +49,18 @@ public class Assignment_5_TestCase5 {
 		String alertMessage = driver.switchTo().alert().getText();
 		String expectedAlertMessage = firstName + " and " + lastName + " and " + companyName;
 		System.out.println("STEP- Validate alert message");
-		if(alertMessage.equals(expectedAlertMessage))
+		if (alertMessage.equals(expectedAlertMessage))
 			System.out.println("Alert message match");
 		else
 			System.out.println("Alert message not match");
 		driver.switchTo().alert().accept();
-		
+
 		driver.close();
 		driver.quit();
 	}
 
 	public static void main(String[] args) throws InterruptedException {
-		String url= "http://automationbykrishna.com/#";
+		String url = "http://automationbykrishna.com/#";
 		new Assignment_5_TestCase5(url).testCase5();
 	}
 }

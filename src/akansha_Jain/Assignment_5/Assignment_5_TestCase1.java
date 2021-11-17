@@ -17,24 +17,25 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Assignment_5_TestCase1 {
 	WebDriver driver;
-	
+
 	public Assignment_5_TestCase1(String url) {
-		System.setProperty("webdriver.chrome.driver", "//Users//punchh_akansha//eclipse-workspace//Java_Techno_Selenium_2021//resources//chromedriver");
+		System.setProperty("webdriver.chrome.driver",
+				"//Users//punchh_akansha//eclipse-workspace//Java_Techno_Selenium_2021//resources//chromedriver");
 		System.out.println("STEP - Open Chrome Browser");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		System.out.println("STEP - Enter url");
 		driver.get(url);
 	}
-	
-	//Test Case-1
+
+	// Test Case-1
 	void testCase1() throws InterruptedException {
 		Thread.sleep(3000);
 		System.out.println("STEP- Tap on registration");
 		driver.findElement(By.xpath("//a[@id='registration2']")).click();
 		Thread.sleep(3000);
-		
-		//Postive scenario
+
+		// Postive scenario
 		System.out.println("STEP- Enter username");
 		driver.findElement(By.xpath("//input[@id='unameSignin']")).sendKeys("AkanshaJain");
 		System.out.println("STEP- Enter valid 8 digit password");
@@ -44,21 +45,21 @@ public class Assignment_5_TestCase1 {
 		System.out.println("STEP- Get alert message");
 		String str = driver.switchTo().alert().getText();
 		System.out.println("STEP- Validate alert message in case of success");
-		if(str.equals("Success!"))
+		if (str.equals("Success!"))
 			System.out.println("Success message match");
 		else
 			System.out.println("Success message not match");
 		System.out.println("STEP- Accept alert");
 		driver.switchTo().alert().accept();
-		
-		//Clear fields text
+
+		// Clear fields text
 		System.out.println();
 		System.out.println("STEP- Clear username");
 		driver.findElement(By.xpath("//input[@id='unameSignin']")).clear();
 		System.out.println("STEP- Clear password");
 		driver.findElement(By.xpath("//input[@id='pwdSignin']")).clear();
-		
-		//Negative scenario
+
+		// Negative scenario
 		System.out.println();
 		System.out.println("STEP- Enter username");
 		driver.findElement(By.xpath("//input[@id='unameSignin']")).sendKeys("AkanshaJain");
@@ -69,19 +70,19 @@ public class Assignment_5_TestCase1 {
 		System.out.println("STEP- Get alert message");
 		String str2 = driver.switchTo().alert().getText();
 		System.out.println("STEP- Validate alert message in case of failure");
-		if(str2.equals("Failed! please enter strong password"))
+		if (str2.equals("Failed! please enter strong password"))
 			System.out.println("Failure message match");
 		else
 			System.out.println("Failure message not match");
 		System.out.println("STEP- Dismiss alert");
 		driver.switchTo().alert().dismiss();
-		
+
 		driver.close();
 		driver.quit();
 	}
 
 	public static void main(String[] args) throws InterruptedException {
-		String url= "http://automationbykrishna.com/#";
+		String url = "http://automationbykrishna.com/#";
 		new Assignment_5_TestCase1(url).testCase1();
 	}
 }
