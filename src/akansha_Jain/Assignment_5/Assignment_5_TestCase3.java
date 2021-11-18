@@ -20,19 +20,20 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Assignment_5_TestCase3 {
 	WebDriver driver;
-	
+
 	public Assignment_5_TestCase3(String url) {
-		System.setProperty("webdriver.chrome.driver", "//Users//punchh_akansha//eclipse-workspace//Java_Techno_Selenium_2021//resources//chromedriver");
+		System.setProperty("webdriver.chrome.driver",
+				"//Users//punchh_akansha//eclipse-workspace//Java_Techno_Selenium_2021//resources//chromedriver");
 		System.out.println("STEP - Open Chrome Browser");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		System.out.println("STEP - Enter url");
 		driver.get(url);
 	}
-	
-	//Test Case-3
+
+	// Test Case-3
 	void testCase3() throws InterruptedException {
-		//Accept alert
+		// Accept alert
 		System.out.println("STEP- Tap on basic elements");
 		driver.findElement(By.xpath("//a[@id='basicelements']")).click();
 		Thread.sleep(3000);
@@ -42,7 +43,7 @@ public class Assignment_5_TestCase3 {
 		String expectedAlertMessage = "Are you are doing your homework regularly, Press Okay else Cancel!!";
 		String alertMessage = driver.switchTo().alert().getText();
 		System.out.println("STEP- Validate alert message");
-		if(alertMessage.equals(expectedAlertMessage))
+		if (alertMessage.equals(expectedAlertMessage))
 			System.out.println("Alert message match");
 		else
 			System.out.println("Alert message not match");
@@ -51,16 +52,16 @@ public class Assignment_5_TestCase3 {
 		System.out.println("STEP- Validate confirmation message");
 		String expectedConfirmationMessage = "You pressed OK!";
 		String confirmationMessage = driver.findElement(By.xpath("//p[text()='You pressed OK!']")).getText();
-		if(confirmationMessage.equals(expectedConfirmationMessage))
+		if (confirmationMessage.equals(expectedConfirmationMessage))
 			System.out.println("Confirmation message match");
 		else
 			System.out.println("Confirmation message not match");
-		
-		//Dismiss alert
+
+		// Dismiss alert
 		System.out.println("STEP- Tap on Javascript Confirmation");
 		driver.findElement(By.xpath("//button[@id='javascriptConfirmBox']")).click();
 		System.out.println("STEP- Validate alert message");
-		if(alertMessage.equals(expectedAlertMessage))
+		if (alertMessage.equals(expectedAlertMessage))
 			System.out.println("Alert message match");
 		else
 			System.out.println("Alert message not match");
@@ -69,17 +70,17 @@ public class Assignment_5_TestCase3 {
 		System.out.println("STEP- Validate confirmation message");
 		String expectedConfirmationMessage2 = "You pressed Cancel!";
 		String confirmationMessage2 = driver.findElement(By.xpath("//p[text()='You pressed Cancel!']")).getText();
-		if(confirmationMessage2.equals(expectedConfirmationMessage2))
+		if (confirmationMessage2.equals(expectedConfirmationMessage2))
 			System.out.println("Confirmation message match");
 		else
 			System.out.println("Confirmation message not match");
-		
+
 		driver.close();
 		driver.quit();
 	}
 
 	public static void main(String[] args) throws InterruptedException {
-		String url= "http://automationbykrishna.com/#";
+		String url = "http://automationbykrishna.com/#";
 		new Assignment_5_TestCase3(url).testCase3();
 	}
 }
